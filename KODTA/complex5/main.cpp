@@ -3,36 +3,23 @@
 
 int main()
 {
-    Complex c1;
-    Complex c2 = 3.0;
-    Complex c3 (3.0, 4.0);
-    const Complex c4 = c3;
+    Complex c1, c2, c3;
+    std::cout << "Enter a complex number (format: (re,im)): ";
+    std::cin >> c1;
 
-    //int i = 100;
-    //const int i = 100;
+    std::cout << "Enter another complex number (format: (re,im)): ";
+    std::cin >> c2;
 
-    c1 += c3;
-    c1=c3;
-
-    if (c1==c3)
-    {
-        std::cout << "equal" << std::endl;
-    }
-    else
-    {
-        std::cout << "not equal" << std::endl;
+    if (!std::cin) { // Check for input errors
+        std::cout << "Invalid input format." << std::endl;
+        return 1;
     }
 
-    //c1 != c3;
-    c1 = c2 + c3;
+    c3 = c1 + c2;
 
-    //c4.real(5.0);//should be read only
-    //c4.imag(6.0);//should be read only
-    std::cout<<"c1 : " << c1 << std::endl;
-    std::cout<<"c2 : " << c2 << std::endl;
-    std::cout<<"c3 : " << c2 << std::endl;
-    std::cout<<"c4 : " << c2 << std::endl;
-    std::cout<< "c4 :(" <<c4.real()<<","<<c4.imag()<<"i)"<<std::endl;
+    std::cout << "c1: " << c1 << std::endl;
+    std::cout << "c2: " << c2 << std::endl;
+    std::cout << "c3 (c1 + c2): " << c3 << std::endl;
 
     return 0;
 }
