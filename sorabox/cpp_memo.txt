@@ -1,0 +1,23 @@
+Memory Management:
+new-delete : +space +constructor/destructor(automatically)
+malloc-free : +space
+
+
+Binding:
+static binding : bind before running(compile-time) = default for non-virtual functions
+dynamic binding : +"virtual", bind when running(runtime)
+
+
+Arguments and Parameters:
+Arguments are the values or variables you pass to a function when you call it. 
+foo(42) : 42 is the argument passed to the function foo. 
+void foo(int x) : x is the parameter that receives the argument 42.
+
+
+Templates:
+(=Generic programming: argument + certain type -> the certain type of new code)
+(Templates allow the generation of code for different data types based on 
+    the arguments provided. This is known as generic programming in C++.)
+1)copy cpp file and paste it on the headerfile
+2)+<typename T>
+3)+<T> : except in class name, constructor, destructor

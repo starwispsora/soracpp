@@ -1,9 +1,13 @@
-/*Inheritance
+/*
+<Inheritance>
 In C++, it is possible to inherit attributes and methods from one class to another. 
 
 Why And When To Use "Inheritance"?
 - It is useful for code reusability: 
-reuse attributes and methods of an existing class when you create a new class.*/
+reuse attributes and methods of an existing class when you create a new class.
+
+parents' public can be inherited to child's public or private
+ */
 
 #include <iostream>
 #include <string>

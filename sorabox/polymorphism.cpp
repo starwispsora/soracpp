@@ -1,4 +1,7 @@
-/* Polymorphism */
+/* 
+<Polymorphism>
+parents can do reference child's objects.(every time they return value)
+limitation : parents only able to get return reference as to inherit  */
 
 #include <iostream>
 #include <string>
