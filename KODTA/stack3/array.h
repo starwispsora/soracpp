@@ -1,16 +1,15 @@
 #ifndef ARRAY_H
 #define ARRAY_H
-//#define ARRAYSIZE 100
 
 
 class Array {
 static const int ARRAYSIZE;
 private:
-    int *pArr_;
-    int size_;
+    int *pArr;
+    int size;
 public:
     explicit Array(int size= ARRAYSIZE); //explicit keyword to prevent implicit conversion //Array arr2 = 10; X
-    Array(const int *pArr, int size);
+    Array(const int *pArr_, int size_);
     Array(const Array& rhs);
     ~Array();
 

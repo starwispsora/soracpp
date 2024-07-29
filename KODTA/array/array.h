@@ -18,9 +18,7 @@ public:
     //Array() {}
     //Array(const Array& rhs) {//memberwise copy}
     //~Array() {}
-
     //Array& operator=(const Array& rhs) {//memberwise copy, return *this}
-
     //Array *operator&() { return this; }
     //const Array *operator&() const { return this; }
 

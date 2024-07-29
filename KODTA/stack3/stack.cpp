@@ -1,9 +1,11 @@
 #include "stack.h"
 #include <cassert>
 
+
 // Define the static member
 const int Stack::STACKSIZE = 100;
 
+/*
 Stack::Stack(int size)
 : pArr_(new int[size]), size_(size), tos_(0)
 {
@@ -14,11 +16,23 @@ Stack::~Stack()
 {
     delete [] pArr_;
 }
+*/
+Stack::Stack(int size)
+: arr_(size), tos_(0)
+{
+    
+}
+
+Stack::~Stack()
+{
+    //arr_.~Array(); // be called automatically
+}
 
 void Stack::push(int data)
 {
     assert(!full());
-    pArr_[tos_] = data;
+    // pArr_[tos_] = data;
+    arr_[tos_] = data;
     ++tos_;
 }
 
@@ -26,12 +40,14 @@ int Stack::pop()
 {
     assert(!empty());
     --tos_;
-    return pArr_[tos_]; // Fixed typo here
+    //return pArr_[tos_];
+    return arr_[tos_]; // Fixed typo here
 }
 
 bool Stack::full() const
 {
-    return tos_ == size_;
+    //return tos_ == size_;
+    return tos_ == arr_.size();
 }
 
 bool Stack::empty() const

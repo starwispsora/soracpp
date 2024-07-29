@@ -1,11 +1,13 @@
 #ifndef STACK_H
 #define STACK_H
+#include "array.h"
 
 class Stack {
 private:
     static const int STACKSIZE; // Fixed typo here
     int *pArr_;
     int size_;
+    Array arr_; //has-a relationship
     int tos_;
 
     Stack(const Stack& rhs); // Copy constructor is private
