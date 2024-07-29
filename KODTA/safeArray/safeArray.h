@@ -16,5 +16,4 @@ public:
     virtual int& operator[](int index);
     virtual const int& operator[](int index) const;
 };
-
 #endif

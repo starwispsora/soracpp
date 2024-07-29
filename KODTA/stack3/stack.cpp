@@ -72,14 +72,4 @@ Stack& Stack::operator=(const Stack& rhs)
     if (this != &rhs) {
         delete [] pArr_; // Free existing resource
 
-        size_ = rhs.size_;
-        tos_ = rhs.tos_;
-        pArr_ = new int[size_];
-        assert(pArr_);
-
-        for (int i = 0; i < tos_; ++i) {
-            pArr_[i] = rhs.pArr_[i];
-        }
-    }
-    return *this;
-}
+       

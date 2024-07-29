@@ -15,6 +15,7 @@ public:
     Array(const Array& rhs);
     virtual ~Array();
 
+
     Array& operator=(const Array& rhs);
     bool operator==(const Array& rhs) const;
 
