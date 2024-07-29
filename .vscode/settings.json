@@ -1,3 +1,9 @@
 {
-    "C_Cpp.dimInactiveRegions": false
+    "C_Cpp.dimInactiveRegions": false,
+    "files.associations": {
+        "bitset": "cpp",
+        "ios": "cpp",
+        "locale": "cpp",
+        "string": "cpp"
+    }
 }
