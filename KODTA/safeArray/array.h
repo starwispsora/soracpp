@@ -23,5 +23,4 @@ public:
 
     int size() const;
 };
-
 #endif
