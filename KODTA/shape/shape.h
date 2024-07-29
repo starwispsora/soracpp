@@ -14,4 +14,11 @@ public:
     //~Shape();
     //Shape& operator=(const Shape& rhs);
 
-    void mo
+    void move(int x, int y);
+
+    double area() const; // can't implement
+
+
+};
+
+#endif

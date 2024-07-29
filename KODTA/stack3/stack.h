@@ -20,4 +20,8 @@ public:
     void push(int data);
     int pop();
 
-  
+    bool full() const;
+    bool empty() const;
+};
+
+#endif

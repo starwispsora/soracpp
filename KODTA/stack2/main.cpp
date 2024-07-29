@@ -14,4 +14,7 @@ int main()
 
     while (!s1.empty()) {
         std::cout << s1.pop() << std::endl;
-  
+    }
+
+    return 0;
+}
