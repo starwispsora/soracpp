@@ -5,13 +5,19 @@ Shape::Shape(int x, int y)
 {
 }
 
+Shape::~Shape()
+{
+}
+
 void Shape::move(int x, int y)
 {
     x_ += x;
     y_ += y;
 }
 
+/*
 double Shape::area() const
 {
  //can't implement
 }
+*/

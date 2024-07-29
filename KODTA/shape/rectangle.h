@@ -12,10 +12,11 @@ public:
     //Rectangle (); X
     Rectangle(int x, int y, int w, int h);
     //Rectangle(const Rectangle& rhs); 
-    //~Rectangle(); 
+    virtual ~Rectangle(); 
     //Rectangle& operator=(const Rectangle& rhs); 
 
-    double area() const;
+  
+    virtual double area() const;
     double getDiagonal() const;
 };
 
