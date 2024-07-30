@@ -1,3 +1,12 @@
+★compiler providing 6 code
+pointer member - on heap memory
++try-catch-throw (user set them)
++4type castings
++nanespace
++shallow copy -> reference
++C language + algorithm > C++
+
+
 Memory Management:
 new-delete : +space +constructor/destructor(automatically)
 malloc-free : +space
